@@ -1,102 +1,135 @@
-# :wave: The Basics of GitHub 
+# Intro to Git and GitHub
+## A guide to version control for students
+### Introduction
+Over the course of a programming project, you've likely created several different versions of your program. As you've probably experienced, it can be difficult to keep track of the different versions of your project with naming schemes alone. Today, you'll learn a better way to handle versioning than naming the latest copy of your project `Project Final v2`. 
 
-## 🤓 Course overview and learning outcomes 
+This guide introduces two version control tools – Git and GitHub. These are widely used by programmers, from students like yourself to professional software engineers in the tech industry. One simple form of version control that you might already be familiar with is in applications like Google Docs or Google Slides, which track edit history and allow the naming of discrete versions of documents. Version control systems like Git have a steeper learning curve than these tools, but are much more powerful.
 
-The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
+By the end of this guide, you should have a basic idea of how to utilize Git and GitHub for your own programming assignments. You'll also learn how to use these two tools to work effectively in a team environment, and find out why so many professionals choose Git for collaborative coding. Finally, you'll install Git and GitHub Desktop on your computer to prepare for your future assignments.
 
-## :octocat: Git and GitHub
+Also provided are supplementary resources and suggested next steps. If you've been given an assignment on GitHub Classroom based on this repository, ask your instructor about the completion criteria for the assignment.
 
-Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
+## Git 
+Git is a free, fast, and open-source distributed[^1] **Version Control System (VCS)**. A VCS is a tool for tracking changes to files over time. With Git, you can easily track changes to your code over time, so that you always have a record of what you've worked on and can revert to an older version if something breaks. Git also has powerful tools for collaboration and parallel development. 
 
-GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
+By creating a Git *repository*,[^2] you can record changes to your project as *commits*, which include information like a timestamp and description. When looking back on a commit, Git shows exactly what changes were made in the *diff* format, which provides you the ability to easily compare two files by highlighting the changes between them. Additionally, you can work on multiple features simultaneously by using *branches*, which are essentially parallel tracks of development on a project.
 
-GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
+[^1]: With Git, "distributed" essentially means that each contributor to a project has a full copy of the project, including all its history. So not only do you have redundant *distributed* backups, but the full history also helps when contributors try to change the same code (more on this later).
 
-## :octocat: Understanding the GitHub flow 
+[^2]: A repository is basically the Git term for a project - more on this later.
 
-The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
+## GitHub :octocat: 
+GitHub allows hosting and sharing Git *repositories* (like this one). It's an easier way to use Git and also provides additional features like GitHub Organizations and GitHub Classroom. Many teams, developers, and open-source projects use GitHub to organize their collaboration efforts. As a student, you'll find it useful for group projects - as a service designed specifically for programming, it's much easier to code collaboratively than alternatives like sharing zip files of your project through Dropbox or Google Drive.
 
+To use GitHub, you’ll need to [create an account](https://github.com/signup). As a student, you should create an account using your professional or university email, if you haven’t already.
+
+## Installing Git
+To get started with Git and GitHub, you'll need to install Git on your computer. If you're using a university lab computer, Git may already be installed. You can check if Git is installed by running the following command (on any OS): `git --version`. If you don't have terminal or command prompt access, try searching from your Start Menu (Windows) or use Finder (Mac). If you have Git installed, you can proceed to installing GitHub Desktop in the next section. Otherwise, follow the steps below:
+
+1. Navigate to the [Git download portal](https://git-scm.com/downloads).
+2. Download the appropriate version for your device's operating system. ![[Git Install Page.png]]
+3. Once downloaded, run the Git installer. 
+4. Navigate through the installation wizard. 
+	- You may want to add a desktop icon, if applicable.
+	- **You should change the default editor from Vim to another editor you are comfortable with if you do not already know how to use Vim.**
+	- Otherwise, most default settings should be fine to leave as is.
+
+Once the installer is complete, you can proceed to the next section. If you're having trouble installing Git, ask your instructor for assistance, or try consulting [this documentation page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+## Installing GitHub Desktop
+At its core, Git is a command-line utility. Using a graphical interface like GitHub Desktop makes using Git much easier. GitHub Desktop also allows easy management of and contribution to repositories hosted on GitHub. This guide will cover usage of Git through GitHub Desktop to contribute to repositories, such as assignments from GitHub Classroom. To install GitHub Desktop, follow the steps below:
+
+1. Navigate to the [GitHub Desktop download portal](https://desktop.github.com/).
+2. Again, download the appropriate version for your device and OS. ![[GH Desktop DL Page.png]]
+3. Once downloaded, run the installer. You'll be prompted to sign in to your GitHub account. ![[GitHub Desktop Installer.png]]
+4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can allow GitHub to configure this for you.
+
+At this point, the installation should be complete, and you can move on to the next section.
+
+## Git and GitHub Terminology
 ### Repositories
+A repository, or repo for short, is basically the folder housing your project and all the relevant code. On your computer, your *local* copy of a repository is a folder which you've set up Git in. On GitHub, a *remote* copy of your repository is housed under your account [dashboard](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard). You can work alone on a project or invite others to collaborate with you. Later, you'll learn how to create and manage repositories. [Learn more about repositories here](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
+#### A popular open source repository on GitHub
+![[GH Guide Repo.png]]
 
-### Cloning 
+### READMEs and Markdown
+In addition to code, repositories usually contain a file named `README.md`, like this one. A `README` is typically used to summarize your project or provide usage instructions. If a file named `README.md` is present in a repository uploaded to GitHub, it will be displayed on the main page of your repository.
 
-When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
-To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+You may have noticed the `.md` extension - this stands for Markdown, a markup language (similar to HTML) that allows you to easily format your `README` and other areas on GitHub. [Learn more about using Markdown on GitHub here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Committing and pushing
-**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
+### Cloning
+When you create a repository on the GitHub website or if someone else created the repository, you won't have a local copy on your machine. This will also be the case for assignment repositories created by GitHub Classroom. Once you've navigated to a repository on the GitHub website, you can *clone* it to create a local copy on your computer as follows: 
 
-Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
+1. On the repository page, click the green Code button: ![[GH Guide Cloning 1.png]]
+2. Then, open the repo in GitHub Desktop: ![[GH Guide Cloning 2.png]]
+3. You may have to accept a prompt from your browser to open a link with GitHub Desktop. Once it opens, you can choose a directory to clone the repository into. You should pick a folder you'll remember where you can organize your repositories. ![[GH Guide Cloning 3.png]]
+4. Finally, press Clone, and wait for the repository files to download. Once complete, you can begin making changes.
 
-## 💻 GitHub terms to know 
+[Learn more about cloning here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
 
-### Repositories 
-We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
+Alternatively, if you know the name of the repository you want to clone, you can also clone directly from GitHub Desktop by [following this documentation page](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop).
 
-Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
-To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
+### Commits
+A Git *commit* is a "snapshot" of the repository at a specific point in time. A commit is also a set of differences, or *diffs*, from the last commit. You can also think of a commit as a list of changes that have been made. For instance, when you create a project, your "initial commit" might be to add a `README.md` file. In this case, the *diff* is relative to an empty project - you've added the entire file. But if you make another commit changing only one line in your `README`, the commit will only reference that specific line. This is how the history of a repository is structured - as a set of commits over time. 
+
+Commits are accompanied by a message and, optionally, a description. If you're changing more than a few lines of code, you should write a description that tells others what you changed in the commit. Then, briefly summarize your changes in the commit message. Commits also record a timestamp (when the changes were made) and an author (who made the changes). [Learn more about making commits here.](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)
+
+You should make commits frequently to save your work. Making commits often makes it easier to describe what you've done in the commit message and description, since there's less changes to summarize. In GitHub Desktop, you can select certain files or even certain lines of code to be included in a commit. This allows you to make more granular commits. To select all changes for the current commit, check the highlighted box below.
+
+![[GH Guide Commits 1.png]] 
+![[GH Guide Commits 2.png]]
+
+You can also discard unwanted changes by right-clicking (or an equivalent action for your OS) on a file that has been changed, and selecting "Discard Changes" or "Discard Selected Changes." You can press `Shift` to select multiple changes.
+
+[Learn more about commits here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop).
+
+### Pushing, Fetching, and Pulling
+Once you've made changes, you'll need to *push* them to remote repository on GitHub. This is how you update the remote repo so that your teammates or instructor can view your changes. 
+
+Before you can push any changes, GitHub Desktop will *fetch* updates from the remote repository. This tells Git if changes have been made to the remote version since you last fetched. If there are changes, you must *pull* them and update your local copy before pushing your changes. If the changes on the remote conflict with your changes, you'll have to resolve them - this is known as a *merge conflict*. More details on that soon.
+
+[Learn more about pushing, fetching, and pulling here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github-from-github-desktop).
 
 ### Branches
-You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
-To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
+A branch is an independent line of development in a repository. You can decide to "branch off" from a specific commit. Then, you can safely make changes, fix bugs, or experiment with new features on a working copy of your repository separate from your `main` branch.[^3] Once you're done making changes, fixing bugs, or developing a new feature, you can *merge* the branch back into the `main` branch. 
 
-### Forks
-A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
-To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+The most important usage for branches is collaboration. Since branches are independent from their origin, you and your teammates can each work on a single feature in your own separate branches, then merge back into `main` when you're done. 
 
-### Pull requests
-When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
-To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
+Best practice is to create a new branch for any non-trivial change. If you're updating one line in the README or fixing a comment typo, there's no need to create a new branch. However, rewriting a function or reworking an entire class merits creation of a branch. [Learn more about branching here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches-in-github-desktop).[^4]
 
+![[Git Branching Atlassian.png]]
+
+
+#### Merge Conflicts
+If there have been changes to the `main` branch since you created the new branch, you may encounter a *merge conflict*. This occurs when Git can't automatically merge commits because they change the same lines of code. Merge conflicts require manual resolution. GitHub Desktop has a straightforward UI for merge conflict resolution that appears when it detects a merge conflict. You must choose to either keep one set of changes or manually resolve the conflict - perhaps by combining the changes. [Learn more about resolving merge conflicts here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
+
+![[Git Merging Atlassian.png]]
+
+
+
+[^3]: The original branch of a GitHub repository is typically called `main` (the default) or similar.
+
+[^4]: Images in this section from https://www.atlassian.com/git/tutorials/using-branches and https://www.atlassian.com/git/tutorials/using-branches/git-merge. These are helpful resources, but use Git from the command-line, so they aren't particularly applicable to this tutorial.
+
+### Pull Requests
+While it is possible to merge a branch directly, when collaborating on a project, you should first consult your teammates and ask them to review your changes. When finished working on a branch, you can create a *pull request* to discuss the changes with collaborators and fix any issues before merging into `main`. Once your teammates agree that your changes are good, you can merge into `main`, close the pull request, and delete the branch.
+
+You can create a pull request either from GitHub Desktop or from the repository homepage. The former is often easier, as GitHub Desktop will prompt you to preview a pull request once you've pushed changes on your branch to the remote copy of the repository.
+
+![[GH Guide PR.png]]
+
+When creating a pull request, be careful to ensure that you are merging the correct source branch (the one you were working on) into the appropriate destination branch (usually `main`). [Learn more about pull requests here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ### Issues
-Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
+Issues are a way to track enhancements, tasks, or bugs related to your repository and project. On the GitHub website, you can open an issue from the Issues tab of your repository. This is especially helpful for larger or open-source projects, but you can also use it for group projects. [Learn more about issues here](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
 
-For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
-You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
-To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
+## Optional Next Steps
+* Create a new markdown file in this repository summarizing what you've learned. Try experimenting with markdown formatting and styling.
+* Create a new repository from your user dashboard. Try cloning the repo and adding a `README.md` or a simple Hello World program.
+* Sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) - it gives free GitHub Pro and many other benefits from various partner companies.
 
-### Your user profile
-
-Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
-To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
-
-### Using markdown on GitHub 
-
-You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
-To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
-
-### Engaging with the GitHub community
-
-The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
-
-#### Starring repositories 
-
-If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
-To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
-
-#### Following users 
-
-You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
-To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
-
-#### Browsing GitHub Explore 
-
-GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
-
-You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you interact with GitHub the more tailored your Explore view will be. 
-
-## 📝 Optional next steps 
-
-* Open a pull request and let your teacher know that you’ve finished this course.  
-* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
-* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
-* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
-* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
-
-## 📚  Resources 
+## Resources 
 * [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
 * [Git and GitHub learning resources](https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources) 
 * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
@@ -105,3 +138,4 @@ You can check out the GitHub Explore website [at github.com/explore](https://git
 * [GitHub's Learning Lab](https://lab.github.com/)
 * [Education community forum](https://education.github.community/)
 * [GitHub community forum](https://github.community/)
+* [GitHub Student Developer Pack](https://education.github.com/pack)
