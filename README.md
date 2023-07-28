@@ -27,7 +27,8 @@ To use GitHub, you’ll need to [create an account](https://github.com/signup). 
 To get started with Git and GitHub, you'll need to install Git on your computer. If you're using a university lab computer, Git may already be installed. You can check if Git is installed by running the following command (on any OS): `git --version`. If you don't have terminal or command prompt access, try searching from your Start Menu (Windows) or use Finder (Mac). If you have Git installed, you can proceed to installing GitHub Desktop in the next section. Otherwise, follow the steps below:
 
 1. Navigate to the [Git download portal](https://git-scm.com/downloads).
-2. Download the appropriate version for your device's operating system. ![[Git Install Page.png]]
+2. Download the appropriate version for your device's operating system. ![Git Install Page](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/b4c54b3c-ace7-4d79-a8f5-4c160016576d)
+
 3. Once downloaded, run the Git installer. 
 4. Navigate through the installation wizard. 
 	- You may want to add a desktop icon, if applicable.
@@ -40,8 +41,10 @@ Once the installer is complete, you can proceed to the next section. If you're h
 At its core, Git is a command-line utility. Using a graphical interface like GitHub Desktop makes using Git much easier. GitHub Desktop also allows easy management of and contribution to repositories hosted on GitHub. This guide will cover usage of Git through GitHub Desktop to contribute to repositories, such as assignments from GitHub Classroom. To install GitHub Desktop, follow the steps below:
 
 1. Navigate to the [GitHub Desktop download portal](https://desktop.github.com/).
-2. Again, download the appropriate version for your device and OS. ![[GH Desktop DL Page.png]]
-3. Once downloaded, run the installer. You'll be prompted to sign in to your GitHub account. ![[GitHub Desktop Installer.png]]
+2. Again, download the appropriate version for your device and OS. ![GH Desktop DL Page](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/be204228-764c-40e0-b876-a78cea2a90b1)
+
+3. Once downloaded, run the installer. You'll be prompted to sign in to your GitHub account. ![GitHub Desktop Installer](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/3e4f5212-c3d5-47e9-aabd-4b563c2bfa59)
+
 4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can allow GitHub to configure this for you.
 
 At this point, the installation should be complete, and you can move on to the next section.
@@ -51,7 +54,8 @@ At this point, the installation should be complete, and you can move on to the n
 A repository, or repo for short, is basically the folder housing your project and all the relevant code. On your computer, your *local* copy of a repository is a folder which you've set up Git in. On GitHub, a *remote* copy of your repository is housed under your account [dashboard](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard). You can work alone on a project or invite others to collaborate with you. Later, you'll learn how to create and manage repositories. [Learn more about repositories here](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
 #### A popular open source repository on GitHub
-![[GH Guide Repo.png]]
+![GH Guide Repo](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/022c5243-307f-470c-ae09-2f234445e632)
+
 
 ### READMEs and Markdown
 In addition to code, repositories usually contain a file named `README.md`, like this one. A `README` is typically used to summarize your project or provide usage instructions. If a file named `README.md` is present in a repository uploaded to GitHub, it will be displayed on the main page of your repository.
@@ -61,9 +65,12 @@ You may have noticed the `.md` extension - this stands for Markdown, a markup la
 ### Cloning
 When you create a repository on the GitHub website or if someone else created the repository, you won't have a local copy on your machine. This will also be the case for assignment repositories created by GitHub Classroom. Once you've navigated to a repository on the GitHub website, you can *clone* it to create a local copy on your computer as follows: 
 
-1. On the repository page, click the green Code button: ![[GH Guide Cloning 1.png]]
-2. Then, open the repo in GitHub Desktop: ![[GH Guide Cloning 2.png]]
-3. You may have to accept a prompt from your browser to open a link with GitHub Desktop. Once it opens, you can choose a directory to clone the repository into. You should pick a folder you'll remember where you can organize your repositories. ![[GH Guide Cloning 3.png]]
+1. On the repository page, click the green Code button: ![GH Guide Cloning 1](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/a938b6d7-1df1-4975-bb53-0b86d4f13d0d)
+
+2. Then, open the repo in GitHub Desktop: ![GH Guide Cloning 2](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/c9832014-331f-4fde-9f6d-3a7ac0bb5812)
+
+3. You may have to accept a prompt from your browser to open a link with GitHub Desktop. Once it opens, you can choose a directory to clone the repository into. You should pick a folder you'll remember where you can organize your repositories. ![GH Guide Cloning 3](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/0fb30c58-d731-4ed3-a454-755bbd2dbcdc)
+
 4. Finally, press Clone, and wait for the repository files to download. Once complete, you can begin making changes.
 
 [Learn more about cloning here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop).
@@ -77,8 +84,8 @@ Commits are accompanied by a message and, optionally, a description. If you're c
 
 You should make commits frequently to save your work. Making commits often makes it easier to describe what you've done in the commit message and description, since there's less changes to summarize. In GitHub Desktop, you can select certain files or even certain lines of code to be included in a commit. This allows you to make more granular commits. To select all changes for the current commit, check the highlighted box below.
 
-![[GH Guide Commits 1.png]] 
-![[GH Guide Commits 2.png]]
+![GH Guide Commits 1](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/b5e18ede-82ce-43af-a07a-5532919cde78)
+![GH Guide Commits 2](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/7f8bbdc2-826d-40f9-9584-7cfe79e489d4)
 
 You can also discard unwanted changes by right-clicking (or an equivalent action for your OS) on a file that has been changed, and selecting "Discard Changes" or "Discard Selected Changes." You can press `Shift` to select multiple changes.
 
@@ -98,13 +105,13 @@ The most important usage for branches is collaboration. Since branches are indep
 
 Best practice is to create a new branch for any non-trivial change. If you're updating one line in the README or fixing a comment typo, there's no need to create a new branch. However, rewriting a function or reworking an entire class merits creation of a branch. [Learn more about branching here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches-in-github-desktop).[^4]
 
-![[Git Branching Atlassian.png]]
+![Git Branching Atlassian](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/a055c26d-d897-48e2-9704-a3db647b8e51)
 
 
 #### Merge Conflicts
 If there have been changes to the `main` branch since you created the new branch, you may encounter a *merge conflict*. This occurs when Git can't automatically merge commits because they change the same lines of code. Merge conflicts require manual resolution. GitHub Desktop has a straightforward UI for merge conflict resolution that appears when it detects a merge conflict. You must choose to either keep one set of changes or manually resolve the conflict - perhaps by combining the changes. [Learn more about resolving merge conflicts here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
 
-![[Git Merging Atlassian.png]]
+![Git Merging Atlassian](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/dcbd5c4d-35ab-4654-af57-9a71154e71f8)
 
 
 
@@ -117,7 +124,7 @@ While it is possible to merge a branch directly, when collaborating on a project
 
 You can create a pull request either from GitHub Desktop or from the repository homepage. The former is often easier, as GitHub Desktop will prompt you to preview a pull request once you've pushed changes on your branch to the remote copy of the repository.
 
-![[GH Guide PR.png]]
+![GH Guide PR](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/760acf48-69c3-42e0-9887-d6f6acec46f8)
 
 When creating a pull request, be careful to ensure that you are merging the correct source branch (the one you were working on) into the appropriate destination branch (usually `main`). [Learn more about pull requests here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
