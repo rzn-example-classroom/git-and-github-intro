@@ -49,6 +49,19 @@ At its core, Git is a command-line utility. Using a graphical interface like Git
 
 At this point, the installation should be complete, and you can move on to the next section.
 
+### Setting your default editor
+Optionally, you can set the default editor or IDE in GitHub Desktop. When on the main page of a repository, GitHub Desktop will offer to open the repo in this editor, like so:
+
+![GitHub Desktop Preferred Editor 1](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/23ae5b3e-cdbf-434f-9df1-04072671ca74)
+
+If you wish to use a different editor than the one shown by your GitHub Desktop instance, you can change this as follows:
+
+1. Click `File` on the top bar at the left.
+2. Click `Options...`, then `Integrations` (second tab down on the left)
+3. From here, you can select your preferred editor from a dropdown showing all supported editors installed on your device. ![GitHub Desktop Preferred Editor 2](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/eab1ec29-bd54-4865-8c69-24dc34fbd453)
+
+4. You can also select your preferred shell from this menu if you are familiar with the terminal, but this guide will not use it.
+
 ## Git and GitHub Terminology
 ### Repositories
 A repository, or repo for short, is basically the folder housing your project and all the relevant code. On your computer, your *local* copy of a repository is a folder which you've set up Git in. On GitHub, a *remote* copy of your repository is housed under your account [dashboard](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard). You can work alone on a project or invite others to collaborate with you. Later, you'll learn how to create and manage repositories. [Learn more about repositories here](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
