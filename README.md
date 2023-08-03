@@ -163,6 +163,10 @@ Issues are a way to track enhancements, tasks, or bugs related to your repositor
 - To complete assignments from GitHub Classroom you will need to utilize Git and GitHub as detailed by this guide.
 - For additional assistance, see [this video](./First%20Assignment%20Tutorial.mp4).
 
+https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/20494780-e636-46f1-bc09-1f8459ffbba8
+
+
+
 ### Submitting assignments
 - **There is no "submit button" in GitHub Classroom.** Assignments will appear as "submitted" to your instructor or TA(s) once a commit has been pushed to the repository.
 	- Thus, remember to save your work by creating and pushing commits often. Make sure to use a descriptive message.
