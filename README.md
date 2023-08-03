@@ -19,7 +19,7 @@ By creating a Git *repository*,[^2] you can record changes to your project as *c
 [^2]: A repository is basically the Git term for a project - more on this later.
 
 ## GitHub :octocat: 
-GitHub allows hosting and sharing Git *repositories* (like this one). It's an easier way to use Git and also provides additional features like GitHub Organizations and GitHub Classroom. Many teams, developers, and open-source projects use GitHub to organize their collaboration efforts. As a student, you'll find it useful for group projects - as a service designed specifically for programming, it's much easier to code collaboratively than alternatives like sharing zip files of your project through Dropbox or Google Drive.
+GitHub allows hosting and sharing Git *repositories* (like this one). It's an easier way to use Git and also provides additional features like GitHub Organizations and GitHub Classroom. Many teams, developers, and open-source projects use GitHub to organize their collaboration efforts. As a student, you'll find it useful for group projects - as a service designed specifically for programming, it's much easier to code collaboratively using GitHub than with alternatives like sharing zip files of your project through Dropbox or Google Drive.
 
 To use GitHub, you’ll need to [create an account](https://github.com/signup). As a student, you should create an account using your professional or university email, if you haven’t already.
 
