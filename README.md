@@ -161,7 +161,7 @@ Issues are a way to track enhancements, tasks, or bugs related to your repositor
 
 ### Completing assignments
 - To complete assignments from GitHub Classroom you will need to utilize Git and GitHub as detailed by this guide.
-- For additional assistance, see [this video](./First%20Assignment%20Tutorial.mp4).
+- For additional assistance, see the video below ([available for download here](./First%20Assignment%20Tutorial.mp4)).
 
 https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/20494780-e636-46f1-bc09-1f8459ffbba8
 
