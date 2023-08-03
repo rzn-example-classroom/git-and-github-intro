@@ -5,7 +5,7 @@ Over the course of a programming project, you've likely created several differen
 
 This guide introduces two version control tools – Git and GitHub. These are widely used by programmers, from students like yourself to professional software engineers in the tech industry. One simple form of version control that you might already be familiar with is in applications like Google Docs or Google Slides, which track edit history and allow the naming of discrete versions of documents. Version control systems like Git have a steeper learning curve than these tools, but are much more powerful.
 
-By the end of this guide, you should have a basic idea of how to utilize Git and GitHub for your own programming assignments. You'll also learn how to use these two tools to work effectively in a team environment, and find out why so many professionals choose Git for collaborative coding. Finally, you'll install Git and GitHub Desktop on your computer to prepare for your future assignments.
+By the end of this guide, you should have a basic idea of how to utilize Git, and GitHub for your programming assignments. You'll also learn how to use these tools to work effectively in a team environment, and find out why so many professionals choose Git for collaborative coding. You'll install Git and GitHub Desktop on your computer to prepare for your future assignments, and you'll learn how to use GitHub Desktop to complete an assignment from GitHub Classroom.
 
 Also provided are supplementary resources and suggested next steps. If you've been given an assignment on GitHub Classroom based on this repository, ask your instructor about the completion criteria for the assignment.
 
