@@ -7,7 +7,10 @@ This guide introduces two version control tools – Git and GitHub. These are wi
 
 By the end of this guide, you should have a basic idea of how to utilize Git, and GitHub for your programming assignments. You'll also learn how to use these tools to work effectively in a team environment, and find out why so many professionals choose Git for collaborative coding. You'll install Git and GitHub Desktop on your computer to prepare for your future assignments, and you'll learn how to use GitHub Desktop to complete an assignment from GitHub Classroom.
 
-Also provided are supplementary resources and suggested next steps. If you've been given an assignment on GitHub Classroom based on this repository, ask your instructor about the completion criteria for the assignment.
+Also provided are supplementary resources and suggested next steps. If you've been given an assignment on GitHub Classroom based on this repository, ask your instructor about the completion criteria for the assignment. 
+
+### Text editors
+Before installing Git, you should ensure a suitable text editor is installed on your machine. By default, Git uses `vi` or Vim as its default text editor. If you are not already familiar with `vi` or its derivatives, you should install a suitable replacement. [Visual Studio Code](https://code.visualstudio.com/download) is recommended since it is cross-platform, extensible, and supports nearly any programming language with the right extensions.
 
 ## Git 
 Git is a free, fast, and open-source distributed[^1] **Version Control System (VCS)**. A VCS is a tool for tracking changes to files over time. With Git, you can easily track changes to your code over time, so that you always have a record of what you've worked on and can revert to an older version if something breaks. Git also has powerful tools for collaboration and parallel development. 
@@ -32,7 +35,10 @@ To get started with Git and GitHub, you'll need to install Git on your computer.
 3. Once downloaded, run the Git installer. 
 4. Navigate through the installation wizard. 
 	- You may want to add a desktop icon, if applicable.
-	- **You should change the default editor from Vim to another editor you are comfortable with if you do not already know how to use Vim.**
+	- **If you do not already know how to use `vi` or Vim, change the default editor from `vi`/Vim to another editor installed on your machine.** Again, Visual Studio Code is recommended.
+		- If installing Git from a visual installer (such as the Git for Windows installer), one page of the installer should prompt you to change this.
+		- If installing Git from the command line, you may have to modify its settings manually with the command `git config --global core.editor "code --wait"`.
+	- If prompted to choose a default branch name, `main` is currently recommended by GitHub. If you have previous VCS experience, you can choose a name you are familiar with, or just leave it as the default.
 	- Otherwise, most default settings should be fine to leave as is.
 
 Once the installer is complete, you can proceed to the next section. If you're having trouble installing Git, ask your instructor for assistance, or try consulting [this documentation page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -45,7 +51,8 @@ At its core, Git is a command-line utility. Using a graphical interface like Git
 
 3. Once downloaded, run the installer. You'll be prompted to sign in to your GitHub account. ![GitHub Desktop Installer](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/3e4f5212-c3d5-47e9-aabd-4b563c2bfa59)
 
-4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can allow GitHub to configure this for you.
+4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can also use the email associated with your GitHub account (which should be your professional or university email). Alternatively, uou can allow GitHub to automatically generate an email that keeps your personal email private.
+	- The email provided is associated with changes you make so that others can contact you about them if need be. Displaying your university email may make it easier for instructors to identify you.
 
 At this point, the installation should be complete, and you can move on to the next section.
 
@@ -61,6 +68,13 @@ If you wish to use a different editor than the one shown by your GitHub Desktop 
 3. From here, you can select your preferred editor from a dropdown showing all supported editors installed on your device. ![GitHub Desktop Preferred Editor 2](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/eab1ec29-bd54-4865-8c69-24dc34fbd453)
 
 4. You can also select your preferred shell from this menu if you are familiar with the terminal, but this guide will not use it.
+
+### Two-factor authentication
+You are strongly encouraged to enable two-factor authentication on your GitHub account. You can follow [GitHub's instructions here](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) to do so.
+
+#### GitHub mobile app
+GitHub provides a mobile application which can be used as a second factor of authentication, and also for certain actions you will learn about shortly (issue and pull request management, mostly). You may optionally install the app if you would like to have an additional sign-in method.
+
 
 ## Git and GitHub Terminology
 ### Repositories
@@ -153,9 +167,10 @@ Issues are a way to track enhancements, tasks, or bugs related to your repositor
 - It is not recommended to accept assignments from your mobile device, since GitHub Classroom's interface is not fully compatible with mobile devices.
 
 ### Joining your classroom's GitHub Organization
-- Your primary interaction with the class will be through its GitHub Organization.
-	- This is where the course syllabus and/or other pertinent information will be located.
-	- This is also where you can find your copy of the repository for assignments you have accepted.
+- Your instructor will have prepared a GitHub Organization to house materials relevant to the course (ex. a syllabus or example code) and your programming assignments.
+	- Once you accept an assignment via the link provided by your instructor, a repository will be automatically created for you (or your group).
+		- You can view your copy of each assignment from the `Repositories` tab of your class's GitHub Organization.
+	- Essentially, the GitHub Organization mostly contains code for assignments and projects, while lecture materials will most likely be provided via your learning management system (Canvas, Moodle, Google Classroom, etc.) if applicable.
 - When you accept your first assignment, you should automatically receive an email inviting you to join your classroom's GitHub Organization.
 	- Follow these instructions alongside your instructor's direction so that you can access the appropriate class materials.
 
@@ -165,13 +180,11 @@ Issues are a way to track enhancements, tasks, or bugs related to your repositor
 
 https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/20494780-e636-46f1-bc09-1f8459ffbba8
 
-
-
 ### Submitting assignments
-- **There is no "submit button" in GitHub Classroom.** Assignments will appear as "submitted" to your instructor or TA(s) once a commit has been pushed to the repository.
+- **There is no "submit button" in GitHub Classroom. Assignments will only appear as "submitted" to your instructor or TA(s) once a commit has been pushed to the repository.**
 	- Thus, remember to save your work by creating and pushing commits often. Make sure to use a descriptive message.
 
-## Optional Next Steps
+## Recommended Next Steps
 * Create a new markdown file in this repository summarizing what you've learned. Try experimenting with markdown formatting and styling.
 * Create a new repository from your user dashboard. Try cloning the repo and adding a `README.md` or a simple Hello World program.
 * Sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) - it gives free GitHub Pro and many other benefits from various partner companies.
