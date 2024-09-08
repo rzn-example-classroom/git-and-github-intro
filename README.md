@@ -51,7 +51,7 @@ At its core, Git is a command-line utility. Using a graphical interface like Git
 
 3. Once downloaded, run the installer. You'll be prompted to sign in to your GitHub account. ![GitHub Desktop Installer](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/3e4f5212-c3d5-47e9-aabd-4b563c2bfa59)
 
-4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can also use the email associated with your GitHub account (which should be your professional or university email). Alternatively, uou can allow GitHub to automatically generate an email that keeps your personal email private.
+4. Once you've logged in, you'll be asked to configure Git with the username and email that you prefer to use. You can also use the email associated with your GitHub account (which should be your professional or university email). Alternatively, you can allow GitHub to automatically generate an email that keeps your personal email private.
 	- The email provided is associated with changes you make so that others can contact you about them if need be. Displaying your university email may make it easier for instructors to identify you.
 
 At this point, the installation should be complete, and you can move on to the next section.
@@ -73,14 +73,14 @@ If you wish to use a different editor than the one shown by your GitHub Desktop 
 You are strongly encouraged to enable two-factor authentication on your GitHub account. You can follow [GitHub's instructions here](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) to do so.
 
 #### GitHub mobile app
-GitHub provides a mobile application which can be used as a second factor of authentication, and also for certain actions you will learn about shortly (issue and pull request management, mostly). You may optionally install the app if you would like to have an additional sign-in method.
+GitHub provides a mobile application that can be used as a second factor of authentication, and also for certain actions you will learn about shortly (issue and pull request management, mostly). You may optionally install the app if you would like to have an additional sign-in method.
 
 
 ## Git and GitHub Terminology
 ### Repositories
 A repository, or repo for short, is basically the folder housing your project and all the relevant code. On your computer, your *local* copy of a repository is a folder which you've set up Git in. On GitHub, a *remote* copy of your repository is housed under your account [dashboard](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard). You can work alone on a project or invite others to collaborate with you. Later, you'll learn how to create and manage repositories. [Learn more about repositories here](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories).
 
-#### A popular open source repository on GitHub
+#### A popular open-source repository on GitHub
 ![GH Guide Repo](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/022c5243-307f-470c-ae09-2f234445e632)
 
 
@@ -109,7 +109,7 @@ A Git *commit* is a "snapshot" of the repository at a specific point in time. A 
 
 Commits are accompanied by a message and, optionally, a description. If you're changing more than a few lines of code, you should write a description that tells others what you changed in the commit. Then, briefly summarize your changes in the commit message. Commits also record a timestamp (when the changes were made) and an author (who made the changes). [Learn more about making commits here.](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)
 
-You should make commits frequently to save your work. Making commits often makes it easier to describe what you've done in the commit message and description, since there's less changes to summarize. In GitHub Desktop, you can select certain files or even certain lines of code to be included in a commit. This allows you to make more granular commits. To select all changes for the current commit, check the highlighted box below.
+You should make commits frequently to save your work. Making commits often makes it easier to describe what you've done in the commit message and description, since there are fewer changes to summarize. In GitHub Desktop, you can select certain files or even certain lines of code to be included in a commit. This allows you to make more granular commits. To select all changes for the current commit, check the highlighted box below.
 
 ![GH Guide Commits 1](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/b5e18ede-82ce-43af-a07a-5532919cde78)
 ![GH Guide Commits 2](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/7f8bbdc2-826d-40f9-9584-7cfe79e489d4)
@@ -119,7 +119,7 @@ You can also discard unwanted changes by right-clicking (or an equivalent action
 [Learn more about commits here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop).
 
 ### Pushing, Fetching, and Pulling
-Once you've made changes, you'll need to *push* them to remote repository on GitHub. This is how you update the remote repo so that your teammates or instructor can view your changes. 
+Once you've made changes, you'll need to *push* them to the remote repository on GitHub. This is how you update the remote repo so that your teammates or instructor can view your changes. 
 
 Before you can push any changes, GitHub Desktop will *fetch* updates from the remote repository. This tells Git if changes have been made to the remote version since you last fetched. If there are changes, you must *pull* them and update your local copy before pushing your changes. If the changes on the remote conflict with your changes, you'll have to resolve them - this is known as a *merge conflict*. More details on that soon.
 
@@ -130,7 +130,7 @@ A branch is an independent line of development in a repository. You can decide t
 
 The most important usage for branches is collaboration. Since branches are independent from their origin, you and your teammates can each work on a single feature in your own separate branches, then merge back into `main` when you're done. 
 
-Best practice is to create a new branch for any non-trivial change. If you're updating one line in the README or fixing a comment typo, there's no need to create a new branch. However, rewriting a function or reworking an entire class merits creation of a branch. [Learn more about branching here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches-in-github-desktop).[^4]
+Best practice is to create a new branch for any non-trivial change. If you're updating one line in the README or fixing a comment typo, there's no need to create a new branch. However, rewriting a function or reworking an entire class merits the creation of a branch. [Learn more about branching here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches-in-github-desktop).[^4]
 
 ![Git Branching Atlassian](https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/a055c26d-d897-48e2-9704-a3db647b8e51)
 
@@ -144,10 +144,10 @@ If there have been changes to the `main` branch since you created the new branch
 
 [^3]: The original branch of a GitHub repository is typically called `main` (the default) or similar.
 
-[^4]: Images in this section from https://www.atlassian.com/git/tutorials/using-branches and https://www.atlassian.com/git/tutorials/using-branches/git-merge. These are helpful resources, but use Git from the command-line, so they aren't particularly applicable to this tutorial.
+[^4]: Images in this section from https://www.atlassian.com/git/tutorials/using-branches and https://www.atlassian.com/git/tutorials/using-branches/git-merge. These are helpful resources, but use Git from the command line, so they aren't particularly applicable to this tutorial.
 
 ### Pull Requests
-While it is possible to merge a branch directly, when collaborating on a project, you should first consult your teammates and ask them to review your changes. When finished working on a branch, you can create a *pull request* to discuss the changes with collaborators and fix any issues before merging into `main`. Once your teammates agree that your changes are good, you can merge into `main`, close the pull request, and delete the branch.
+While it is possible to merge a branch directly, when collaborating on a project, you should first consult your teammates and ask them to review your changes. When finished working on a branch, you can create a *pull request* to discuss the changes with collaborators and fix any issues before merging into `main`. Once your teammates agree that your changes are good, you can merge them into `main`, close the pull request, and delete the branch.
 
 You can create a pull request either from GitHub Desktop or from the repository homepage. The former is often easier, as GitHub Desktop will prompt you to preview a pull request once you've pushed changes on your branch to the remote copy of the repository.
 
@@ -175,7 +175,7 @@ Issues are a way to track enhancements, tasks, or bugs related to your repositor
 	- Follow these instructions alongside your instructor's direction so that you can access the appropriate class materials.
 
 ### Completing assignments
-- To complete assignments from GitHub Classroom you will need to utilize Git and GitHub as detailed by this guide.
+- To complete assignments from GitHub Classroom you will need to utilize Git and GitHub as detailed in this guide.
 - For additional assistance, see the video below ([available for download here](./First%20Assignment%20Tutorial.mp4)).
 
 https://github.com/rzn-example-classroom/git-and-github-intro/assets/16062019/20494780-e636-46f1-bc09-1f8459ffbba8
